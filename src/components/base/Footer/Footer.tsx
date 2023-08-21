@@ -1,4 +1,3 @@
-import * as React from 'react';
 import dayjs from 'dayjs';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface

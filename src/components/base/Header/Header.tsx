@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { BsFillHandbagFill } from 'react-icons/bs';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
