@@ -1,18 +1,19 @@
-import * as React from 'react';
+import { NextPage } from 'next';
+
 import { BsFillHandbagFill } from 'react-icons/bs';
 
-export interface IHeaderProps {
+interface HeaderProps {
   name?: string;
 }
 
-export function Header(props: IHeaderProps) {
+const Header: NextPage<HeaderProps> = ({ name }) => {
   return (
     <header className="border-b border-gray-100 bg-white">
       <div className="flex items-center justify-between h-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
         <div className="flex items-center">
           <a href="defef" className="flex">
             <span className="inline-block w-32 h-10 bg-gray-200 rounded-lg">
-              {props?.name}
+              {name}
             </span>
           </a>
         </div>
@@ -68,4 +69,6 @@ export function Header(props: IHeaderProps) {
       </div>
     </header>
   );
-}
+};
+
+export default Header;

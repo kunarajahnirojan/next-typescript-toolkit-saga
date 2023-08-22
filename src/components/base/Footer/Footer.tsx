@@ -1,11 +1,11 @@
-import * as React from 'react';
+import { NextPage } from 'next';
 import dayjs from 'dayjs';
 
-export interface IFooterProps {
+interface FooterProps {
   name?: string;
 }
 
-export function Footer(props: IFooterProps) {
+const Footer: NextPage<FooterProps> = ({ name }) => {
   return (
     <footer>
       <div className="bg-white px-20">
@@ -13,7 +13,7 @@ export function Footer(props: IFooterProps) {
           <div className="flex flex-col py-4">
             <a href="defef" className="flex">
               <span className="inline-block w-32 h-10 bg-gray-200 rounded-lg">
-                {props?.name}
+                {name}
               </span>
             </a>
 
@@ -63,4 +63,6 @@ export function Footer(props: IFooterProps) {
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;
