@@ -1,11 +1,11 @@
+import * as React from 'react';
 import dayjs from 'dayjs';
 
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface IFooterProps {
   name?: string;
 }
 
-export default function Footer(props: IFooterProps) {
+export function Footer(props: IFooterProps) {
   return (
     <footer>
       <div className="bg-white px-20">

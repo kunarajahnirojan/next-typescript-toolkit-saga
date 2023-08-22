@@ -7,12 +7,12 @@ export interface ILayoutProps {
 
 export default function Layout(props: ILayoutProps) {
   return (
-    <main>
+    <div className="bg-white">
       <Header />
-      <div className="min-h-full flex flex-col bg-white md:container mx-auto">
-        <main className="flex">{props?.children}</main>
-      </div>
+
+      <main className="flex">{props.children}</main>
+
       <Footer />
-    </main>
+    </div>
   );
 }

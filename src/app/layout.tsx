@@ -1,10 +1,7 @@
 import '@/styles/index.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 
 import { Layout } from '@/layout';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'sample',
@@ -17,10 +14,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <Layout>
-        <body className={inter.className}>{children}</body>
-      </Layout>
+    <html lang="en" className="bg-white">
+      <Layout>{children}</Layout>
     </html>
   );
 }

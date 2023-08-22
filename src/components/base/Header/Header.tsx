@@ -1,13 +1,13 @@
+import * as React from 'react';
 import { BsFillHandbagFill } from 'react-icons/bs';
 
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface IHeaderProps {
   name?: string;
 }
 
-export default function Header(props: IHeaderProps) {
+export function Header(props: IHeaderProps) {
   return (
-    <header className="border-b border-gray-100">
+    <header className="border-b border-gray-100 bg-white">
       <div className="flex items-center justify-between h-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
         <div className="flex items-center">
           <a href="defef" className="flex">
