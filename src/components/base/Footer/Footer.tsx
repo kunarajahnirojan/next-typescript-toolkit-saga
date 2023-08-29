@@ -1,11 +1,12 @@
-import { NextPage } from 'next';
+import { GetServerSideProps } from 'next';
 import dayjs from 'dayjs';
+import React from 'react';
 
 interface FooterProps {
   name?: string;
 }
 
-const Footer: NextPage<FooterProps> = ({ name }) => {
+const Footer: React.FC<FooterProps> = ({ name }) => {
   return (
     <footer>
       <div className="bg-white px-20">
@@ -63,6 +64,14 @@ const Footer: NextPage<FooterProps> = ({ name }) => {
       </div>
     </footer>
   );
+};
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  return {
+    props: {
+      name: 'sample',
+    },
+  };
 };
 
 export default Footer;

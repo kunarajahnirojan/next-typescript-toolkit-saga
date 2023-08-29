@@ -1,12 +1,11 @@
-import { NextPage } from 'next';
-
+import React from 'react';
 import { BsFillHandbagFill } from 'react-icons/bs';
 
 interface HeaderProps {
   name?: string;
 }
 
-const Header: NextPage<HeaderProps> = ({ name }) => {
+const Header: React.FC<HeaderProps> = ({ name }) => {
   return (
     <header className="border-b border-gray-100 bg-white">
       <div className="flex items-center justify-between h-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
