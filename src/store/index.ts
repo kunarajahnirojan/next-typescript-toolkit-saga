@@ -12,10 +12,8 @@ import createSagaMiddleware from 'redux-saga';
 import { createLogger } from 'redux-logger';
 
 import { createAxios } from '@/lib/axios';
-
-//
-import rootReducer from './reducer';
-import { rootSaga } from './saga';
+import rootReducer from '@/store/reducer';
+import { rootSaga } from '@/store/saga';
 
 const sagaMiddleware = createSagaMiddleware();
 
