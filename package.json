@@ -1,6 +1,7 @@
 {
-  "name": "slytherene_news_client",
+  "name": "next",
   "version": "0.1.0",
+  "author": "Kunarajah Nirojan",
   "private": true,
   "scripts": {
     "dev": "next dev",
